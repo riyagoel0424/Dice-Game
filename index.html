@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- wrapper class containing both the players 1 and 2 -->
+    <div class="wrapper">
+      <!-- Player 0 box -->
+      <div class="player-box-0 active">
+        <div class="player-name" id="player-name-0">PLAYER 1</div>
+        <div class="player-score" id="total-score-0">0</div>
+        <!-- current score box for player 1 -->
+        <div class="current-box">
+          <div class="current-keyword">CURRENT</div>
+          <div class="current-score" id="current-score-0">0</div>
+        </div>
+      </div>
+      <!-- Player 1 box -->
+      <div class="player-box-1">
+        <div class="player-name" id="player-name-1">PLAYER 2</div>
+        <div class="player-score" id="total-score-1">0</div>
+        <!-- current score box for player 2 -->
+        <div class="current-box">
+          <div class="current-keyword">CURRENT</div>
+          <div class="current-score" id="current-score-1">0</div>
+        </div>
+      </div>
+      <!-- Button to start new game -->
+      <button class="new-button">
+        <i class="far fa-plus-square"></i>
+        NEW GAME
+      </button>
+      <!-- Button to roll the dice -->
+      <button class="roll-dice-button">
+        <i class="fas fa-dice"></i>ROLL DICE
+      </button>
+      <!-- Button to hold the current score -->
+      <button class="hold-button">
+        <i class="far fa-pause-circle"></i>HOLD
+      </button>
+      <!-- input field to select the target -->
+      <input
+        type="number"
+        placeholder="SELECT A TARGET"
+        min="0"
+        id="target-score"
+      />
+      <!-- Two dice images  -->
+      <img src="dice-5.png" alt="Dice1" class="dice" id="dice-1" />
+      <img src="dice-5.png" alt="Dice1" class="dice" id="dice-2" />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
