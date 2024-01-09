@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    rgba(62, 20, 20, 0.4),
+    rgba(62, 20, 20, 0.4)
+  );
+  height: 100vh;
+  font-family: Lato;
+  font-weight: 300;
+  position: relative;
+}
+
+.wrapper {
+  height: 600px;
+  width: 1000px;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  left: 17%;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.3);
+}
+
+.player-box-0,
+.player-box-1 {
+  width: 50%;
+  float: left;
+  height: 600px;
+}
+
+.active {
+  background-color: #f7f7f7;
+}
+
+.active .player-name {
+  font-weight: 300;
+}
+
+.active .player-name::after {
+  content: "\2022";
+  font-size: 47px;
+  position: absolute;
+  color: #eb4d4d;
+  top: -7px;
+  right: 22%;
+}
+
+.player-name {
+  letter-spacing: 2px;
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+  top: 20%;
+  font-weight: 100;
+}
+
+.player-score {
+  font-size: 80px;
+  position: relative;
+  text-align: center;
+  top: 24%;
+  font-weight: 100;
+  color: #eb4d4d;
+}
+
+.current-box {
+  position: relative;
+  width: 24%;
+  margin: 0 auto;
+  height: 90px;
+  top: 43%;
+  background-color: #eb4d4d;
+}
+
+button {
+  left: 43%;
+  font-family: Lato;
+  font-size: 20px;
+  color: #555;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+button:hover {
+  font-weight: 600;
+}
+
+.new-button {
+  position: absolute;
+  top: 7%;
+}
+
+.roll-dice-button {
+  position: absolute;
+  top: 68%;
+}
+
+.hold-button {
+  position: absolute;
+  top: 76%;
+  letter-spacing: 2px;
+  left: 45%;
+}
+
+input {
+  position: absolute;
+  top: 89%;
+  left: 40%;
+  height: 30px;
+  width: 22%;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+  font-family: Lato;
+  font-size: 20px;
+}
+
+i {
+  color: #eb4d4d;
+  letter-spacing: 8px;
+  font-size: 32px;
+  font-family: Lato;
+}
+
+.dice {
+  position: absolute;
+  height: 69px;
+  width: 69px;
+  left: 47%;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+
+#dice-1 {
+  top: 23%;
+}
+
+#dice-2 {
+  top: 43%;
+}
+
+.current-keyword {
+  position: relative;
+  text-align: center;
+  color: black;
+  top: 17%;
+  font-size: 16px;
+}
+
+.current-score {
+  position: relative;
+  top: 25%;
+  text-align: center;
+  color: white;
+  font-size: 33px;
+}
+
+.winner {
+  background-color: #f7f7f7;
+}
+
+.winner .player-name {
+  font-weight: 300;
+  color: #eb4d4d;
+}
